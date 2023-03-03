@@ -200,3 +200,16 @@ for (x in person) {
   console.log(x);
   console.log(person[x]);
 }
+
+//web storages - HTML5
+//JSON: Javascript object notation.It is a data format. It is used to transport the data.
+window.localStorage.setItem("item", JSON.stringify({ name: "hello" }));
+
+//clear(), remove()
+
+console.log(JSON.parse(window.localStorage.getItem("item")));
+
+// XML Format
+
+// JSON.stringify() will convert object/array to JSON format
+// JSON.parse will convert JSON format to array/object
